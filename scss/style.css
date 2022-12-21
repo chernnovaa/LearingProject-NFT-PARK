@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #fff;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background-image: url(../images/bg-welcome.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  text-transform: lowercase;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 70px 70px;
+  align-items: center;
+}
+.navigation__box {
+  display: flex;
+}
+.navigation__list {
+  display: flex;
+  gap: 0 25px;
+}
+.navigation__social {
+  display: flex;
+  gap: 0 35px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+}
+.welcome-to {
+  color: #C2E978;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.05em;
+  margin: 0 0 8px 0;
+}
+.welcome__subtitle {
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #C2E978;
+  text-transform: uppercase;
+}
+.welcome__subtitle--big {
+  font-size: 48px;
+  line-height: 46px;
+}
+.welcome__subtitle-span {
+  color: #fff;
+}
+.welcome__text {
+  font-size: 26px;
+  line-height: 38px;
+  width: 675px;
+}
+.welcome__text {
+  font-size: 26px;
+  line-height: 38px;
+}
+.welcome__text--smaller {
+  font-size: 20px;
+  line-height: 32px;
+  width: 525px;
+}/*# sourceMappingURL=style.css.map */
