@@ -64,6 +64,14 @@ ul {
   color: #C2E978;
 }
 
+.social__link path {
+  transition: fill 0.3s ease;
+}
+
+.social__link:hover path {
+  fill: #C2E978;
+}
+
 .welcome {
   display: flex;
   flex-direction: column;
@@ -125,6 +133,7 @@ ul {
 .tree__box {
   display: flex;
   align-items: center;
+  padding: 0 96px 0 76px;
 }
 .tree__box-subscribe {
   display: flex;
@@ -134,22 +143,25 @@ ul {
 .tree__box-text--title {
   font-family: "Patrick Hand", cursive;
   text-transform: uppercase;
-  font-size: 48px;
-  line-height: 46px;
+  font-size: 35px;
+  line-height: 42px;
   letter-spacing: 0.05em;
+  margin-bottom: 5px;
 }
 .tree__box-text--subtitle {
   font-family: "Patrick Hand", cursive;
   text-transform: uppercase;
-  font-size: 53px;
-  line-height: 53px;
+  font-size: 42px;
+  line-height: 44px;
   letter-spacing: 0.05em;
   color: #C2E978;
+  margin: 0;
 }
 .tree__box-subscribe--text {
   font-size: 25px;
   line-height: 32px;
   text-align: right;
+  margin-bottom: 24px;
 }
 .tree__btn {
   background-color: #C2E978;
@@ -162,4 +174,11 @@ ul {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   letter-spacing: 0.07em;
+  transition: all 0.3s;
+  display: flex;
+  align-self: self-end;
+}
+.tree__btn:hover {
+  background-color: #08162B;
+  color: #C2E978;
 }/*# sourceMappingURL=style.css.map */
