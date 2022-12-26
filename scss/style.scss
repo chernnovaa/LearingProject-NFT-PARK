@@ -118,10 +118,12 @@ ul {
   background-image: url(../images/tree-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 59px;
   &__box {
     display: flex;
     align-items: center;
     padding: 0 56px 0 36px;
+    height: 335px;
     &-wrapper {
       background-image: url(../images/Vector.png);
       background-repeat: no-repeat;
@@ -178,5 +180,42 @@ ul {
       background-color: #08162B;
       color: #C2E978;
     }
+  }
+}
+.parameters {
+ padding: 48px 0 60px 0;
+  &__title {
+   font-family: "Patrick Hand", cursive;
+   text-transform: uppercase;
+   font-size: 40px;
+   line-height: 46px;
+   text-align: center;
+   letter-spacing: 0.05em;
+   margin: 0;
+   padding-bottom: 25px;
+ }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    &-inner {
+      background-color: #191D2E;
+      padding: 32px 24px;
+    }
+  }
+  &__name {
+    font-family: "Patrick Hand", cursive;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #C2E978;
+    padding-bottom: 4px;
+    margin: 0;
+  }
+  &__text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
