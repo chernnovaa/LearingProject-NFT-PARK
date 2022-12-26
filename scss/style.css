@@ -31,12 +31,10 @@ ul {
 }
 
 .header {
-  background-image: url(../images/bg-welcome.jpg);
+  background-image: linear-gradient(0, #000000 0%, rgba(0, 0, 0, 0) 15%), url(../images/bg-welcome.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
-  text-transform: lowercase;
 }
 
 .navigation {
@@ -64,11 +62,11 @@ ul {
   color: #C2E978;
 }
 
-.social__link path {
+.social__link-icon {
   transition: fill 0.3s ease;
+  fill: #fff;
 }
-
-.social__link:hover path {
+.social__link-icon:hover {
   fill: #C2E978;
 }
 
@@ -133,7 +131,15 @@ ul {
 .tree__box {
   display: flex;
   align-items: center;
-  padding: 0 96px 0 76px;
+  padding: 0 56px 0 36px;
+}
+.tree__box-wrapper {
+  background-image: url(../images/Vector.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding: 15px;
+  min-width: 312px;
 }
 .tree__box-subscribe {
   display: flex;
@@ -156,6 +162,7 @@ ul {
   letter-spacing: 0.05em;
   color: #C2E978;
   margin: 0;
+  margin-left: 10px;
 }
 .tree__box-subscribe--text {
   font-size: 25px;
