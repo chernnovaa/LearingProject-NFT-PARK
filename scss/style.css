@@ -228,4 +228,34 @@ ul {
   margin: 0;
   font-size: 20px;
   line-height: 28px;
+}
+
+.token {
+  padding: 0 0 50px 0;
+}
+.token__title {
+  margin: 0;
+  padding-bottom: 25px;
+  font-family: "Patrick Hand", cursive;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.token__title span {
+  color: #C2E978;
+}
+.token__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.token__wrapper-inner {
+  background-color: #191D2E;
+  padding: 35px 24px 32px 24px;
+}
+.token__text {
+  font-size: 20px;
+  line-height: 28px;
 }/*# sourceMappingURL=style.css.map */
