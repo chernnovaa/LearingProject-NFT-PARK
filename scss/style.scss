@@ -250,3 +250,62 @@ ul {
     margin: 0;
   }
 }
+.formula {
+  padding: 0 0 140px 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  // &__text {
+  //   font-family: "Patrick Hand", cursive;
+  //   text-transform: uppercase;
+  //   font-size: 40px;
+  //   letter-spacing: 0.05em;
+  // }
+  // &__title {
+  //   line-height: 46px;
+  //   margin: 0;
+  // }
+  // &__subtitle {
+  //   line-height: 39px;
+  //   color: #C2E978;
+  //   margin: 0;
+  // }
+  &__title {
+    font-family: "Patrick Hand", cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+  &__subtitle {
+    font-family: "Patrick Hand", cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 39px;
+    letter-spacing: 0.05em;
+    color: #C2E978;
+    margin: 0;
+    text-align: center;
+  }
+  &__token {
+    font-family: "Patrick Hand", cursive;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 0;
+    &-area {
+      margin: 0;
+    }
+    &-area--line {
+      border-bottom: 1px solid #fff;
+    }
+    &-number {
+      margin: 0;
+    }
+  }
+}
