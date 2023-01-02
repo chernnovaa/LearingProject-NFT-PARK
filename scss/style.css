@@ -269,6 +269,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 50px;
+  padding-bottom: 26px;
 }
 .formula__title {
   font-family: "Patrick Hand", cursive;
@@ -295,7 +296,6 @@ ul {
   line-height: 27px;
   letter-spacing: 0.05em;
   text-align: center;
-  margin: 0;
 }
 .formula__token-area {
   margin: 0;
@@ -305,4 +305,36 @@ ul {
 }
 .formula__token-number {
   margin: 0;
+}
+.formula__background {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: linear-gradient(180deg, #10121D 0%, #191D2E 100%);
+  padding: 42px 42px 50px 32px;
+}
+.formula__background-wrap, .formula__background-text {
+  font-family: "Patrick Hand", cursive;
+  text-transform: uppercase;
+  font-size: 38px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-right: 15px;
+}
+.formula__background-wrap span, .formula__background-text span {
+  color: #C2E978;
+}
+.formula__background-eur {
+  padding: 0 0 11px 0;
+  margin: 0;
+}
+.formula__background-number {
+  margin: 13px 0 0 0;
+}
+.formula__btn {
+  position: absolute;
+  right: 40px;
+  padding: 34px 80px;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
