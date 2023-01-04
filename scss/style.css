@@ -362,13 +362,14 @@ ul {
 .collection__box {
   display: flex;
   align-items: center;
+  padding-bottom: 50px;
 }
 .collection__box-wrapper {
   background-image: url(../images/vector-2.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  padding: 20px;
+  padding: 40px;
   min-width: 200px;
 }
 .collection__box-title {
@@ -390,4 +391,69 @@ ul {
   max-width: 645px;
   padding-left: 100px;
   margin: 0;
+}
+.collection__picture {
+  display: flex;
+  gap: 10px;
+}
+.collection__picture-img {
+  width: 100%;
+}
+.collection__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collection__info-text {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 25px 0 16px 0;
+  margin: 0;
+}
+.collection__info-btn {
+  align-self: center;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.airdrop {
+  padding-bottom: 85px;
+}
+.airdrop__title {
+  font-family: "Patrick Hand", cursive;
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-bottom: 25px;
+  margin: 0;
+}
+.airdrop__text {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0;
+}
+.airdrop__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+.airdrop__box-item {
+  font-family: "Patrick Hand", cursive;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin: 0;
+}
+.airdrop__box-item--second {
+  font-size: 32px;
+  line-height: 39px;
+}
+.airdrop__box-item--third {
+  font-size: 40px;
+  line-height: 49px;
 }/*# sourceMappingURL=style.css.map */
