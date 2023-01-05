@@ -456,4 +456,48 @@ ul {
 .airdrop__box-item--third {
   font-size: 40px;
   line-height: 49px;
+}
+
+.tokenomics {
+  background: linear-gradient(180deg, #131624 0%, #191D2E 100%);
+  margin-bottom: 150px;
+  padding: 65px 97px 57px 70px;
+  display: flex;
+}
+.tokenomics__title {
+  font-family: "Patrick Hand", cursive;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+.tokenomics__box {
+  font-size: 20px;
+  padding-left: 30px;
+}
+.tokenomics__text {
+  line-height: 28px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.tokenomics__list {
+  padding: 0;
+  margin: 0;
+}
+.tokenomics__list-item {
+  display: flex;
+}
+.tokenomics__list-item:not(last-child) {
+  padding-bottom: 16px;
+}
+.tokenomics__list-text {
+  line-height: 24px;
+  padding-left: 12px;
+  margin: 0;
+}
+.tokenomics__second {
+  line-height: 28px;
+  padding-top: 16px;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
