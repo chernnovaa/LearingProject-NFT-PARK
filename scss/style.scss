@@ -502,3 +502,48 @@ ul {
     margin: 0;
   }
 }
+.roadmap {
+  padding-bottom: 105px;
+  margin-left: 144px;
+  &__title {
+    font-family: "Patrick Hand", cursive;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    padding-bottom: 24px;
+    margin: 0;
+  }
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    &-inner {
+      background: linear-gradient(180deg, #10121D 0%, #191D2E 100%);
+      transition: all .3s;
+      width: 274px;
+      padding: 37px 24px 84px 24px;
+      &:hover {
+        background: linear-gradient(180deg, rgba(1, 55, 66, 0.4) 0%, rgba(7, 126, 76, 0.4) 100%);
+      }
+    }
+    &-svg {
+      transition: all .3s ease;
+      fill: #7E839A;
+      &:hover {
+        fill: #C2E978;
+      }
+    }
+    &-text {
+      font-size: 20px;
+      line-height: 28px;
+      color: #7E839A;
+      margin: 0;
+      padding-top: 15px;
+      transition: all 3s;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

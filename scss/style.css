@@ -500,4 +500,50 @@ ul {
   line-height: 28px;
   padding-top: 16px;
   margin: 0;
+}
+
+.roadmap {
+  padding-bottom: 105px;
+  margin-left: 144px;
+}
+.roadmap__title {
+  font-family: "Patrick Hand", cursive;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  padding-bottom: 24px;
+  margin: 0;
+}
+.roadmap__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.roadmap__box-inner {
+  background: linear-gradient(180deg, #10121D 0%, #191D2E 100%);
+  transition: all 0.3s;
+  width: 274px;
+  padding: 37px 24px 84px 24px;
+}
+.roadmap__box-inner:hover {
+  background: linear-gradient(180deg, rgba(1, 55, 66, 0.4) 0%, rgba(7, 126, 76, 0.4) 100%);
+}
+.roadmap__box-svg {
+  transition: all 0.3s ease;
+  fill: #7E839A;
+}
+.roadmap__box-svg:hover {
+  fill: #C2E978;
+}
+.roadmap__box-text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #7E839A;
+  margin: 0;
+  padding-top: 15px;
+  transition: all 3s;
+}
+.roadmap__box-text:hover {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
