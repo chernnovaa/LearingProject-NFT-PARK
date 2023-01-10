@@ -589,3 +589,52 @@ ul {
     }
   }
 }
+.footer {
+  padding-bottom: 50px;
+  font-family: "Patrick Hand", cursive;
+  text-transform: uppercase;
+  &__box {
+    background: linear-gradient(180deg, #201841 0%, #2C205D 100%);
+    display: flex;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 80px;
+    }
+    &-text {
+      font-size: 34px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      margin: 0;
+    }
+    &-title {
+      font-size: 38px;
+      line-height: 44px;
+      letter-spacing: 0.05em;
+      color: #C2E978;
+      margin: 0;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    &-link {
+      transition: fill 0.3s ease;
+      fill: #C2E978;
+      &:hover {
+        fill: #fff;
+      }
+    }
+  }
+  &__text {
+    text-align: center;
+    padding-top: 80px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 21px;  
+    letter-spacing: 0.05em;
+  }
+}
