@@ -461,9 +461,9 @@ ul {
 }
 .tokenomics {
   background: linear-gradient(180deg, #131624 0%, #191D2E 100%);
-  margin-bottom: 150px;
   padding: 65px 97px 57px 70px;
   display: flex;
+  height: 250px;
   &__title {
     font-family: "Patrick Hand", cursive;
     text-transform: uppercase;
@@ -502,11 +502,16 @@ ul {
     margin: 0;
   }
 }
+.traces {
+  position: relative;
+  bottom: 120px;
+  width: 100%;
+  z-index: -1;
+}
 .roadmap {
-  padding-bottom: 105px;
   margin-left: 144px;
-  background-image: url(../images/roadmap-bg.svg);
-  background-repeat: no-repeat;
+  position: relative;
+  bottom: 245px;
   &__title {
     font-family: "Patrick Hand", cursive;
     text-transform: uppercase;
@@ -522,19 +527,20 @@ ul {
     gap: 10px;
     &-inner {
       background: linear-gradient(180deg, #10121D 0%, #191D2E 100%);
-      transition: all .3s;
       width: 274px;
       padding: 37px 24px 84px 24px;
       &:hover {
         background: linear-gradient(180deg, rgba(1, 55, 66, 0.4) 0%, rgba(7, 126, 76, 0.4) 100%);
+        .roadmap__box-inner--svg {
+          fill: #C2E978;
+        }
+        .roadmap__box-inner--text {
+          color: #fff;
+        }
       }
     }
-    &-svg {
-      transition: all .3s ease;
+     &-svg {
       fill: #7E839A;
-      &:hover {
-        fill: #C2E978;
-      }
     }
     &-text {
       font-size: 20px;
@@ -542,10 +548,6 @@ ul {
       color: #7E839A;
       margin: 0;
       padding-top: 15px;
-      transition: all 3s;
-      &:hover {
-        color: #fff;
-      }
     }
   }
 }
