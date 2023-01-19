@@ -29,6 +29,14 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  // position: relative;
+  // &::after {
+  //   background-image: url(../images/group-1.svg);
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   width: 100%;
+  //   z-index: 10;
+  // }
 }
 .navigation {
   display: flex;
@@ -439,18 +447,45 @@ ul {
   &__box {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding-top: 40px;
+    flex-wrap: wrap;
+    // &-img::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 10px;
+    //   height: 10px;
+    //   background-color: #fff;
+    // }
+    &-text {
+      margin: 0;
+      &--first {
+        padding-top: 38px;
+        margin: 0;
+      }
+      &--second {
+        padding-top: 23px;
+        margin: 0;
+      }
+      &--third {
+        padding-top: 7px;
+        margin: 0;
+      }
+      &--fourth {
+        padding-top: 52px;
+        margin: 0;
+      }
+    }
     &-item {
       font-family: "Patrick Hand", cursive;
       text-transform: uppercase;
       font-size: 24px;
       line-height: 29px;
       text-align: center;
-      margin: 0;
+      // position: relative;
       &--second {
-        font-size: 32px;
         line-height: 39px;
+        font-size: 32px;
       }
       &--third {
         font-size: 40px;

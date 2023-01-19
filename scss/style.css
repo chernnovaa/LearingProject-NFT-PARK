@@ -438,8 +438,28 @@ ul {
 .airdrop__box {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding-top: 40px;
+  flex-wrap: wrap;
+}
+.airdrop__box-text {
+  margin: 0;
+}
+.airdrop__box-text--first {
+  padding-top: 38px;
+  margin: 0;
+}
+.airdrop__box-text--second {
+  padding-top: 23px;
+  margin: 0;
+}
+.airdrop__box-text--third {
+  padding-top: 7px;
+  margin: 0;
+}
+.airdrop__box-text--fourth {
+  padding-top: 52px;
+  margin: 0;
 }
 .airdrop__box-item {
   font-family: "Patrick Hand", cursive;
@@ -447,11 +467,10 @@ ul {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  margin: 0;
 }
 .airdrop__box-item--second {
-  font-size: 32px;
   line-height: 39px;
+  font-size: 32px;
 }
 .airdrop__box-item--third {
   font-size: 40px;
