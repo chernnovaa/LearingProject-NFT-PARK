@@ -117,8 +117,8 @@ ul {
 }
 .welcome__text--big::after {
   content: "";
-  width: 150px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   background-image: url(../images/header-line.svg);
   position: absolute;
   background-repeat: no-repeat;
@@ -265,9 +265,9 @@ ul {
   background-image: url(../images/token-star.svg);
   background-repeat: no-repeat;
   position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 80px;
+  width: 100%;
+  height: 100%;
+  right: -80px;
 }
 .token__wrapper {
   display: grid;
@@ -367,8 +367,8 @@ ul {
   background-image: url(../images/formula-line.svg);
   background-repeat: no-repeat;
   position: absolute;
-  width: 200px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   top: 50px;
   left: 5%;
 }
@@ -436,8 +436,8 @@ ul {
   content: "";
   background-image: url(../images/collection-star.svg);
   background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: -10px;
   left: 90%;
@@ -557,6 +557,17 @@ ul {
   line-height: 46px;
   letter-spacing: 0.05em;
   margin: 0;
+  position: relative;
+}
+.tokenomics__title::after {
+  content: "";
+  background-image: url(../images/collection-star.svg);
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-repeat: no-repeat;
+  left: -15px;
+  top: -10px;
 }
 .tokenomics__box {
   font-size: 20px;
@@ -608,6 +619,17 @@ ul {
   letter-spacing: 0.05em;
   padding: 0 0 24px 60px;
   margin: 0;
+  position: relative;
+}
+.roadmap__title::after {
+  content: "";
+  background-image: url(../images/collection-star.svg);
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-repeat: no-repeat;
+  left: 45px;
+  top: -5px;
 }
 .roadmap__box {
   display: flex;
