@@ -433,11 +433,22 @@ ul {
       font-size: 48px;
       line-height: 46px;
       letter-spacing: 0.05em;
+      position: relative;
       & span {
         color: #C2E978;
         font-size: 53px;
         line-height: 65px;
         margin-left: 15px;
+      }
+      &::after {
+        content: "";
+        background-image: url(../images/collection-star.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -10px;
+        left: 90%;
       }
     }
   }
@@ -483,6 +494,16 @@ ul {
     text-align: center;
     padding-bottom: 25px;
     margin: 0;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(../images/airdrop-highlight.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -10px;
+    }
   }
   &__text {
     font-size: 24px;
