@@ -321,6 +321,17 @@ ul {
     color: #C2E978;
     margin: 0;
     text-align: center;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(../images/formula-arrow.svg);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 15px;
+      left: 93%;
+    }
   }
   &__token {
     font-family: "Patrick Hand", cursive;
@@ -357,6 +368,18 @@ ul {
     padding-right: 15px;
     & span {
       color: #C2E978;
+      font-size: 43px;
+      position: relative;
+      &::after {
+        content: "";
+        background-image: url(../images/formula-line.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50px;
+        left: 5%;
+      }
     }
     }
     &-eur {

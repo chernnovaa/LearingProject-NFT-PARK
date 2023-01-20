@@ -311,6 +311,17 @@ ul {
   color: #C2E978;
   margin: 0;
   text-align: center;
+  position: relative;
+}
+.formula__subtitle::after {
+  content: "";
+  background-image: url(../images/formula-arrow.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15px;
+  left: 93%;
 }
 .formula__token {
   font-family: "Patrick Hand", cursive;
@@ -348,6 +359,18 @@ ul {
 }
 .formula__background-wrap span, .formula__background-text span {
   color: #C2E978;
+  font-size: 43px;
+  position: relative;
+}
+.formula__background-wrap span::after, .formula__background-text span::after {
+  content: "";
+  background-image: url(../images/formula-line.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  left: 5%;
 }
 .formula__background-eur {
   padding: 0 0 11px 0;
