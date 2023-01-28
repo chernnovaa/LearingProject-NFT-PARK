@@ -619,7 +619,7 @@ ul {
 .tokenomics__box {
   font-size: 20px;
   padding-left: 30px;
-  width: 735px;
+  max-width: 735px;
 }
 .tokenomics__text {
   line-height: 28px;
