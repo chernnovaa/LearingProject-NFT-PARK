@@ -592,9 +592,10 @@ ul {
 
 .tokenomics {
   background: linear-gradient(180deg, #131624 0%, #191D2E 100%);
-  padding: 65px 97px 57px 70px;
+  padding-top: 65px;
   display: flex;
-  height: 250px;
+  justify-content: space-evenly;
+  height: 335px;
 }
 .tokenomics__title {
   font-family: "Patrick Hand", cursive;
@@ -618,6 +619,7 @@ ul {
 .tokenomics__box {
   font-size: 20px;
   padding-left: 30px;
+  width: 735px;
 }
 .tokenomics__text {
   line-height: 28px;
