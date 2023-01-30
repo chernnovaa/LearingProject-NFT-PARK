@@ -37,6 +37,10 @@ ul {
   background-position: center;
 }
 
+.logo {
+  margin-right: 30px;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -45,7 +49,6 @@ ul {
 }
 .navigation__box {
   display: flex;
-  align-items: center;
 }
 .navigation__list {
   display: flex;
@@ -592,10 +595,9 @@ ul {
 
 .tokenomics {
   background: linear-gradient(180deg, #131624 0%, #191D2E 100%);
-  padding-top: 65px;
+  padding: 65px 97px 57px 70px;
   display: flex;
-  justify-content: space-evenly;
-  height: 335px;
+  height: 250px;
 }
 .tokenomics__title {
   font-family: "Patrick Hand", cursive;
@@ -619,7 +621,6 @@ ul {
 .tokenomics__box {
   font-size: 20px;
   padding-left: 30px;
-  max-width: 735px;
 }
 .tokenomics__text {
   line-height: 28px;
@@ -807,4 +808,98 @@ ul {
   font-size: 17px;
   line-height: 21px;
   letter-spacing: 0.05em;
+}
+
+#menu__toggle {
+  visibility: hidden;
+}
+
+@media (max-width: 1120px) {
+  #menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 60px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #C2E978;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .menu__box {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #191D2E;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu__item {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 51px;
+    margin-right: 0;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+    height: 100vh;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+  .menu__item {
+    transition-duration: 0.25s;
+  }
+  .logo {
+    z-index: 1;
+  }
+  .welcome__text {
+    position: inherit;
+  }
+  .welcome__text--big::after {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
