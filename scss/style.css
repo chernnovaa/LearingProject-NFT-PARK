@@ -907,6 +907,69 @@ ul {
   .navigation__social {
     position: relative;
   }
+  .tree__box {
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+  .tree__box-subscribe {
+    max-width: 340px;
+  }
+  .tree__box-wrapper {
+    max-width: 340px;
+  }
+  .tree__img {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .tree {
+    margin: 0;
+  }
+  .tree__box {
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+  .tree__box-subscribe {
+    max-width: 260px;
+  }
+  .tree__box-subscribe--text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .tree__box-wrapper {
+    max-width: 300px;
+  }
+  .tree__box-text--title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .tree__box-text--subtitle {
+    font-size: 36px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 670px) {
+  .tree__box {
+    display: block;
+  }
+  .tree__box-wrapper {
+    padding: 5px;
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+  .tree__box-subscribe {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 10px;
+  }
+  .tree__box-text--title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .tree__box-text--subtitle {
+    font-size: 32px;
+    line-height: 34px;
+  }
 }
 @media (max-width: 590px) {
   .menu__btn {
