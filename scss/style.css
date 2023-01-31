@@ -827,6 +827,7 @@ ul {
     height: 26px;
     cursor: pointer;
     z-index: 1;
+    position: absolute;
   }
   .menu__btn > span,
 .menu__btn > span::before,
@@ -881,6 +882,7 @@ ul {
     visibility: visible;
     left: 0;
     height: 100vh;
+    position: absolute;
   }
   .menu__btn > span,
 .menu__btn > span::before,
@@ -902,24 +904,50 @@ ul {
   .welcome__text--big::after {
     display: none;
   }
+  .navigation__social {
+    position: relative;
+  }
 }
 @media (max-width: 590px) {
+  .menu__btn {
+    right: 60px;
+  }
+  .menu__item {
+    margin: 5px;
+    padding: 0;
+  }
+  .welcome {
+    padding: 0 10px;
+  }
   .welcome__title-img {
     width: 100%;
+  }
+  .welcome__text {
+    font-size: 18px;
+    margin: 10px 0;
   }
   .welcome-to,
 .welcome__subtitle {
     font-size: 24px;
   }
-  .welcome__text {
-    font-size: 18px;
-    margin: 14px 10px 40px 10px;
-  }
   .navigation {
     display: block;
+    padding-bottom: 20px;
   }
   .navigation__social {
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .welcome__subtitle {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .welcome__text {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 15px 0;
   }
 }/*# sourceMappingURL=style.css.map */
