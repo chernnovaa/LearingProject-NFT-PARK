@@ -351,6 +351,9 @@ ul {
   padding: 42px 42px 50px 32px;
   margin-bottom: 25px;
 }
+.formula__background-adaptive {
+  display: flex;
+}
 .formula__background-wrap, .formula__background-text {
   font-family: "Patrick Hand", cursive;
   text-transform: uppercase;
@@ -951,6 +954,16 @@ ul {
     justify-content: flex-end;
     align-items: baseline;
   }
+  .formula__background-wrap,
+.formula__background-text {
+    font-size: 24px;
+  }
+  .formula__background-wrap span, .formula__background-text span {
+    font-size: 28px;
+  }
+  .formula__btn {
+    padding: 30px 50px;
+  }
 }
 @media (max-width: 800px) {
   .tree {
@@ -977,6 +990,14 @@ ul {
   .tree__box-text--subtitle {
     font-size: 36px;
     line-height: 38px;
+  }
+  .formula__background-adaptive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formula__btn {
+    position: static;
   }
 }
 @media (max-width: 670px) {
