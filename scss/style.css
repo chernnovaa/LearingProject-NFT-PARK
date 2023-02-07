@@ -1057,6 +1057,13 @@ ul {
     font-size: 20px;
     line-height: 22px;
   }
+  .formula__background-wrap,
+.formula__background-text {
+    font-size: 20px;
+  }
+  .tree__btn {
+    padding: 20px 34px;
+  }
 }
 @media (max-width: 590px) {
   .menu__btn {
@@ -1102,6 +1109,9 @@ ul {
   }
   .formula__token {
     align-self: self-end;
+  }
+  .formula__background {
+    padding: 20px;
   }
 }
 @media (max-width: 435px) {
