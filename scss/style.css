@@ -268,9 +268,9 @@ ul {
   background-image: url(../images/token-star.svg);
   background-repeat: no-repeat;
   position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 80px;
+  width: 100%;
+  height: 100%;
+  right: -80px;
 }
 .token__wrapper {
   display: grid;
@@ -901,7 +901,8 @@ ul {
   .welcome__text {
     position: inherit;
   }
-  .welcome__text--big::after {
+  .welcome__text--big::after,
+.token__title::after {
     display: none;
   }
   .navigation__social {
@@ -917,14 +918,12 @@ ul {
   .tree__box-wrapper {
     max-width: 340px;
   }
-  .tree__img,
-  .formula__subtitle::after,
-  .token__title::after {
+  .tree__img {
     display: none;
   }
   .formula__title {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 @media (max-width: 800px) {
@@ -953,18 +952,6 @@ ul {
     font-size: 36px;
     line-height: 38px;
   }
-  .formula__token {
-    font-size: 20px;
-    line-height: 23px;
-  }
-  .formula__title {
-    font-size: 28px;
-    line-height: 34px;
- }
-  .formula__subtitle {
-    font-size: 34px;
-    line-height: 33px;
-  }
 }
 @media (max-width: 670px) {
   .tree__box {
@@ -991,8 +978,7 @@ ul {
   .parameters {
     padding: 38px 0 50px 0;
   }
-  .parameters__title,
-  .token__title {
+  .parameters__title {
     font-size: 32px;
     line-height: 40px;
   }
@@ -1000,25 +986,25 @@ ul {
     font-size: 28px;
     line-height: 36px;
   }
-  .parameters__text,
-  .token__text {
+  .parameters__text {
     font-size: 16px;
     line-height: 24px;
   }
   .parameters__wrapper-inner {
     padding: 28px 20px;
   }
-  .formula__subtitle {
-    margin-bottom: 10px;
+  .token__title,
+.formula__title,
+.formula__subtitle {
+    font-size: 32px;
+    line-height: 40px;
   }
-  .formula__token {
-    max-width: 260px;
-    align-self: self-end;
+  .token__wrapper-inner {
+    padding: 20px;
   }
-  .formula__wrapper {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+  .token__text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 @media (max-width: 590px) {
@@ -1040,7 +1026,7 @@ ul {
     margin: 10px 0;
   }
   .welcome-to,
-  .welcome__subtitle {
+.welcome__subtitle {
     font-size: 24px;
   }
   .navigation {
@@ -1057,9 +1043,6 @@ ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-  .token__wrapper-inner {
-    max-width: 260px;
   }
 }
 @media (max-width: 435px) {
@@ -1082,7 +1065,7 @@ ul {
     line-height: 36px;
   }
   .tree__box-subscribe,
-  .parameters__text {
+.parameters__text {
     font-size: 14px;
     line-height: 24px;
   }
@@ -1093,7 +1076,7 @@ ul {
     min-width: 255px;
   }
   .parameters__title,
-  .token__title {
+.token__title {
     font-size: 26px;
     line-height: 34px;
   }
