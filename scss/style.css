@@ -819,7 +819,10 @@ ul {
 
 @media (max-width: 1200px) {
   .collection__picture-img {
-    max-width: 100%;
+    max-width: 33%;
+  }
+  .collection__picture {
+    padding: 0 10px;
   }
 }
 @media (max-width: 1120px) {
@@ -838,8 +841,8 @@ ul {
     position: absolute;
   }
   .menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+  .menu__btn > span::before,
+  .menu__btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -893,8 +896,8 @@ ul {
     position: absolute;
   }
   .menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+  .menu__btn > span::before,
+  .menu__btn > span::after {
     transition-duration: 0.25s;
   }
   .menu__box {
@@ -910,8 +913,8 @@ ul {
     position: inherit;
   }
   .welcome__text--big::after,
-.token__title::after,
-.collection__box-title::after {
+  .token__title::after,
+  .collection__box-title::after {
     display: none;
   }
   .navigation__social {
@@ -928,8 +931,8 @@ ul {
     max-width: 340px;
   }
   .tree__img,
-.formula__subtitle::after,
-.formula__background-text span::after {
+  .formula__subtitle::after,
+  .formula__background-text span::after {
     display: none;
   }
   .formula__title {
@@ -940,13 +943,13 @@ ul {
     padding: 30px 60px;
   }
   .formula__background-wrap,
-.formula__background-text {
+  .formula__background-text {
     font-size: 28px;
   }
 }
 @media (max-width: 950px) {
   .formula {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
   .formula__background {
     display: flex;
@@ -954,15 +957,15 @@ ul {
     justify-content: flex-end;
     align-items: baseline;
   }
+  .formula__btn {
+    padding: 30px 50px;
+  }
   .formula__background-wrap,
-.formula__background-text {
+  .formula__background-text {
     font-size: 24px;
   }
   .formula__background-wrap span, .formula__background-text span {
     font-size: 28px;
-  }
-  .formula__btn {
-    padding: 30px 50px;
   }
 }
 @media (max-width: 800px) {
@@ -998,6 +1001,15 @@ ul {
   }
   .formula__btn {
     position: static;
+  }
+  .collection__box {
+    padding: 20px;
+  }
+  .collection__box-title {
+    font-size: 36px;
+  }
+  .collection__box-title span {
+    font-size: 42px;
   }
 }
 @media (max-width: 670px) {
@@ -1041,10 +1053,15 @@ ul {
     padding: 28px 20px;
   }
   .token__title,
-.formula__title,
-.formula__subtitle {
+  .formula__title,
+  .formula__subtitle,
+  .collection__box-title {
     font-size: 32px;
     line-height: 40px;
+  }
+  .collection__box-title span {
+    font-size: 36px;
+    line-height: 44px;
   }
   .token__wrapper-inner {
     padding: 20px;
@@ -1058,11 +1075,14 @@ ul {
     line-height: 22px;
   }
   .formula__background-wrap,
-.formula__background-text {
+  .formula__background-text {
     font-size: 20px;
   }
   .tree__btn {
     padding: 20px 34px;
+  }
+  .collection__text {
+    padding-left: 30px;
   }
 }
 @media (max-width: 590px) {
@@ -1084,7 +1104,7 @@ ul {
     margin: 10px 0;
   }
   .welcome-to,
-.welcome__subtitle {
+  .welcome__subtitle {
     font-size: 24px;
   }
   .navigation {
@@ -1113,6 +1133,20 @@ ul {
   .formula__background {
     padding: 20px;
   }
+  .collection__box {
+    display: block;
+  }
+  .collection__box-wrapper {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .collection__picture {
+    flex-direction: column;
+    align-items: center;
+  }
+  .collection__picture-img {
+    max-width: 55%;
+  }
 }
 @media (max-width: 435px) {
   .welcome__subtitle {
@@ -1134,7 +1168,11 @@ ul {
     line-height: 36px;
   }
   .tree__box-subscribe,
-.parameters__text {
+  .parameters__text,
+  .token__text,
+  .formula__background-wrap,
+  .collection__text,
+  .collection__info-text {
     font-size: 14px;
     line-height: 24px;
   }
@@ -1145,9 +1183,9 @@ ul {
     min-width: 255px;
   }
   .parameters__title,
-.token__title,
-.formula__title,
-.formula__subtitle {
+  .token__title,
+  .formula__title,
+  .formula__subtitle {
     font-size: 26px;
     line-height: 34px;
   }
@@ -1166,5 +1204,20 @@ ul {
   .formula__icon-text {
     font-size: 14px;
     line-height: 18px;
+  }
+  .formula__background-eur {
+    padding: 0;
+  }
+  .formula__background-number {
+    margin: 0;
+  }
+  .formula__background-text {
+    font-size: 16px;
+  }
+  .collection__info-btn {
+    font-size: 14px;
+  }
+  .collection__box-wrapper {
+    padding: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

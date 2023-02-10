@@ -808,7 +808,10 @@ ul {
 
 @media (max-width: 1200px) {
   .collection__picture-img {
-    max-width: 100%;
+    max-width: 33%;
+  }
+  .collection__picture {
+    padding: 0 10px;
   }
 }
 @media (max-width: 1120px) {
@@ -935,12 +938,15 @@ ul {
 }
 @media (max-width: 950px) {
   .formula {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     &__background {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: baseline;
+    }
+    &__btn {
+      padding: 30px 50px;
     }
   }
   .formula__background-wrap,
@@ -950,9 +956,6 @@ ul {
   .formula__background-wrap span, .formula__background-text span {
     font-size: 28px;
   }
-  .formula__btn {
-    padding: 30px 50px;
-}
 }
 @media (max-width: 800px) {
   .tree {
@@ -987,6 +990,15 @@ ul {
   }
   .formula__btn {
     position: static;
+  }
+  .collection__box {
+    padding: 20px;
+    &-title {
+      font-size: 36px;
+    }
+  }
+  .collection__box-title span {
+    font-size: 42px;
   }
 }
 @media (max-width: 670px) {
@@ -1031,9 +1043,14 @@ ul {
   }
   .token__title,
   .formula__title,
-  .formula__subtitle {
+  .formula__subtitle,
+  .collection__box-title {
     font-size: 32px;
     line-height: 40px;
+  }
+  .collection__box-title span {
+    font-size: 36px;
+    line-height: 44px;
   }
   .token__wrapper-inner {
     padding: 20px;
@@ -1052,6 +1069,9 @@ ul {
   }
   .tree__btn {
     padding: 20px 34px;
+  }
+  .collection__text {
+    padding-left: 30px;
   }
 }
 @media (max-width: 590px) {
@@ -1102,6 +1122,20 @@ ul {
   .formula__background {
     padding: 20px;
   }
+  .collection__box {
+    display: block;
+    &-wrapper {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+  .collection__picture {
+    flex-direction: column;
+    align-items: center;
+    &-img {
+      max-width: 55%;
+    }
+}
 }
 @media (max-width: 435px) {
   .welcome__subtitle {
@@ -1123,7 +1157,11 @@ ul {
   line-height: 36px;
  }
  .tree__box-subscribe,
- .parameters__text {
+ .parameters__text,
+ .token__text,
+ .formula__background-wrap,
+ .collection__text,
+ .collection__info-text {
    font-size: 14px;
    line-height: 24px;
  }
@@ -1155,5 +1193,20 @@ ul {
  .formula__icon-text {
   font-size: 14px;
   line-height: 18px;
+ }
+ .formula__background-eur {
+  padding: 0;
+ }
+ .formula__background-number {
+  margin: 0;
+ }
+ .formula__background-text {
+  font-size: 16px;
+ }
+ .collection__info-btn {
+  font-size: 14px;
+ }
+ .collection__box-wrapper {
+  padding: 20px;
  }
 }
