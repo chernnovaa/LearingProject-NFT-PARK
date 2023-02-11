@@ -490,8 +490,8 @@ ul {
       background-image: url(../images/airdrop-highlight.svg);
       background-repeat: no-repeat;
       position: absolute;
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       top: -10px;
     }
   }
@@ -593,7 +593,7 @@ ul {
   background: linear-gradient(180deg, #131624 0%, #191D2E 100%);
   padding: 65px 97px 57px 70px;
   display: flex;
-  height: 250px;
+  margin-bottom: 50px;
   &__title {
     font-family: "Patrick Hand", cursive;
     text-transform: uppercase;
@@ -602,6 +602,7 @@ ul {
     letter-spacing: 0.05em;
     margin: 0;
     position: relative;
+    padding-bottom: 20px;
     &::after {
       content: "";
       background-image: url(../images/collection-star.svg);
@@ -967,6 +968,9 @@ ul {
   .airdrop__box-item--third::after {
     display: none;
   }
+  .tokenomics {
+    padding: 50px;
+  }
 }
 @media (max-width: 800px) {
   .tree {
@@ -1025,6 +1029,9 @@ ul {
   }
   .airdrop__text {
     font-size: 20px;
+  }
+  .tokenomics {
+    display: block;
   }
 }
 @media (max-width: 670px) {
@@ -1161,7 +1168,11 @@ ul {
     &-img {
       max-width: 55%;
     }
-}
+  }
+  .tokenomics__box {
+    padding: 0;
+    font-size: 18px;
+  }
 }
 @media (max-width: 435px) {
   .welcome__subtitle {
@@ -1226,7 +1237,8 @@ ul {
  .formula__background-number {
   margin: 0;
  }
- .formula__background-text {
+ .formula__background-text,
+ .tokenomics__box {
   font-size: 16px;
  }
  .collection__info-btn {
@@ -1237,5 +1249,11 @@ ul {
  }
  .airdrop__title {
   font-size: 50px;
+ }
+ .tokenomics {
+  padding: 30px;
+  &__title {
+    font-size: 42px;
+  }
  }
 }
