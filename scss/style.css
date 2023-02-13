@@ -691,8 +691,9 @@ ul {
 }
 .roadmap__box-inner {
   background: linear-gradient(180deg, #10121D 0%, #191D2E 100%);
-  width: 274px;
-  padding: 37px 24px 84px 24px;
+  height: 240px;
+  padding: 37px 24px 0 24px;
+  margin-right: 10px;
 }
 .roadmap__box-inner:hover {
   background: linear-gradient(180deg, rgba(1, 55, 66, 0.4) 0%, rgba(7, 126, 76, 0.4) 100%);
@@ -994,6 +995,13 @@ ul {
   .footer__box-img {
     display: none;
   }
+  .roadmap {
+    margin: 50px 0 50px 50px;
+    position: inherit;
+  }
+  .traces {
+    display: none;
+  }
 }
 @media (max-width: 800px) {
   .tree {
@@ -1137,6 +1145,12 @@ ul {
   .collection__text {
     padding-left: 30px;
   }
+  .roadmap__box-text {
+    font-size: 18px;
+  }
+  .roadmap__box-inner {
+    padding: 20px 20px 0 20px;
+  }
 }
 @media (max-width: 590px) {
   .menu__btn {
@@ -1212,6 +1226,9 @@ ul {
   }
   .team__box {
     display: block;
+  }
+  .roadmap {
+    margin: 50px 0 50px 10px;
   }
 }
 @media (max-width: 435px) {
@@ -1310,5 +1327,11 @@ ul {
   }
   .footer__box-title::after {
     display: none;
+  }
+  .roadmap__box-inner {
+    text-align: center;
+  }
+  .roadmap__box-text {
+    padding-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&family=Patrick+Hand&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  // Add the new slick-theme.css if you want the default styling
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
@@ -262,9 +265,9 @@
       </div>
     </section>
     <img class="traces" src="images/roadmap-bg.svg" alt="bg">
-    <!-- <section class="roadmap" id="roadmap">
-      <div class="container">
-        <h2 class="roadmap__title">roadmap</h2>
+    <section class="roadmap" id="roadmap">
+      <h2 class="roadmap__title">roadmap</h2>
+      <div class="roadmap-swiper">
         <div class="roadmap__box">
           <div class="roadmap__box-inner">
             <svg class="roadmap__box-svg roadmap__box-inner--svg" width="56" height="56" viewBox="0 0 56 56">
@@ -298,7 +301,8 @@
               <path
                 d="M21.93 51.3333H32.5511C33.6104 51.2856 34.5074 50.9898 34.536 49.3484L33.4195 35.1202C38.649 36.4943 42.4851 33.3643 43.7734 30.1866C44.6704 27.9059 44.47 25.4247 43.2772 23.3349C46.6649 20.2049 46.1591 16.1874 45.2621 14.2025C44.3651 12.1222 41.1778 8.08557 35.0322 9.53607C33.7344 6.59691 30.5853 4.58339 27.2931 4.66927C24.1153 4.66927 21.2334 6.35834 19.7448 9.03985C15.6223 8.37186 11.9006 11.0247 10.6123 14.2025C9.52446 16.9794 10.1161 20.1571 12.101 22.4379C9.68669 25.377 10.0207 28.7933 10.9082 30.7782C11.8052 32.8585 14.9161 36.8951 21.2239 35.3587L20.0406 49.2434C19.9642 50.4649 20.6513 51.1234 21.93 51.3333ZM24.0199 47.4589L25.3464 32.7249C25.8712 32.1142 26.3006 31.4271 26.5965 30.6828C26.5965 30.5874 26.5965 30.5874 26.5965 30.5874C27.0927 30.6828 27.6843 30.7878 28.1805 30.7878C28.4764 31.408 28.8581 31.9902 29.3161 32.515L30.4708 47.4685H24.0199V47.4589ZM22.6267 11.7214C23.3042 9.6983 24.7547 8.56271 27.0927 8.4482C29.5833 8.55317 31.2533 10.1277 31.6637 12.3226C31.9213 13.8303 33.3814 14.5842 34.641 13.8112C38.7826 11.7404 41.0919 14.6033 41.5881 15.7007C42.0843 16.6931 42.5997 19.3556 39.6032 21.1591C38.4295 21.8844 38.3245 23.1154 39.107 24.2414C40.3953 25.4343 40.6911 27.2188 40.0995 28.7074C39.5078 30.3965 37.1698 32.2096 34.1448 31.1886C32.7515 30.6923 31.7591 29.6045 31.3678 28.2112C31.1674 27.2188 30.175 26.5222 29.1825 26.7226C28.2855 26.923 27.1499 26.8371 26.1002 26.2263C24.8883 25.5774 23.1897 26.4076 23.2183 27.8104C23.2183 28.3067 23.1229 28.7074 22.9225 29.0987C22.3308 30.7878 20.5368 31.8756 18.6569 31.8756C18.0652 31.8756 15.6414 31.618 14.3913 29.1941C13.1316 26.379 15.1833 24.5277 15.9754 24.0315C17.3114 23.2013 17.5117 21.579 15.9754 20.7583C14.1909 19.6705 13.3988 17.4852 14.1909 15.5957C14.7825 13.9066 17.2255 12.1031 20.0501 13.1146C21.1475 13.4868 22.2163 13.0287 22.6267 11.7214Z" />
             </svg>
-            <p class="roadmap__box-text roadmap__box-inner--text">Creation of smart contracts based on Ethereum & Solana
+            <p class="roadmap__box-text roadmap__box-inner--text">Creation of smart contracts based on Ethereum &
+              Solana
               networks</p>
           </div>
           <div class="roadmap__box-inner">
@@ -353,11 +357,13 @@
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M12.5711 12.0799C10.0427 14.1866 8.86694 17.7974 8.86694 24.5C8.86694 31.1866 10.081 34.8039 12.6335 36.916C15.3047 39.1262 19.9295 40.1333 28.0013 40.1333C36.0733 40.1333 40.6974 39.1262 43.368 36.9161C45.92 34.8041 47.1336 31.1868 47.1336 24.5C47.1336 17.7972 45.9583 14.1865 43.4304 12.0798C40.7856 9.87572 36.1692 8.86663 28.0013 8.86663C19.8336 8.86663 15.2165 9.8757 12.5711 12.0799ZM10.1813 9.21171C13.9534 6.06867 19.8369 5.1333 28.0013 5.1333C36.1658 5.1333 42.0488 6.06866 45.8204 9.21181C49.7089 12.4524 50.8669 17.5917 50.8669 24.5C50.8669 31.4243 49.6575 36.557 45.7482 39.7922C41.9576 42.9293 36.0822 43.8666 28.0013 43.8666C19.9204 43.8666 14.0447 42.9293 10.2535 39.7923C6.34366 36.5571 5.13361 31.4245 5.13361 24.5C5.13361 17.5915 6.29221 12.4522 10.1813 9.21171Z" />
             </svg>
-            <p class="roadmap__box-text roadmap__box-inner--text">Creation of graphical collection of 10,000 images</p>
+            <p class="roadmap__box-text roadmap__box-inner--text">Creation of graphical collection of 10,000 images
+            </p>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
+
     <section class="team" id="team">
       <div class="container">
         <h2 class="team__title">team</h2>
@@ -421,6 +427,10 @@
     </div>
     <p class="footer__text">© 2021 Sequioa nft park</p>
   </footer>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
