@@ -1203,12 +1203,21 @@ ul {
   .formula__background {
     padding: 20px;
   }
+  .formula__btn {
+    font-size: 14px;
+  }
   .collection__box {
     display: block;
+    padding: 0;
+    margin-bottom: 25px;
   }
   .collection__box-wrapper {
     max-width: 200px;
     margin: 0 auto;
+  }
+  .collection__text {
+    padding: 0;
+    padding-top: 20px;
   }
   .collection__picture {
     flex-direction: column;
@@ -1263,7 +1272,7 @@ ul {
     line-height: 24px;
   }
   .tree__btn {
-    padding: 16px 30px;
+    padding: 15px 25px;
   }
   .tree__box-wrapper {
     min-width: 255px;
@@ -1307,8 +1316,25 @@ ul {
   .collection__box-wrapper {
     padding: 20px;
   }
+  .airdrop {
+    padding-bottom: 50px;
+  }
   .airdrop__title {
-    font-size: 50px;
+    font-size: 48px;
+  }
+  .airdrop__text {
+    font-size: 18px;
+  }
+  .team__title {
+    font-size: 48px;
+    padding-bottom: 10px;
+  }
+  .team__box-name {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+  .team__box-text {
+    font-size: 14px;
   }
   .tokenomics {
     padding: 30px;
