@@ -1155,10 +1155,13 @@ ul {
 @media (max-width: 590px) {
   .menu__btn {
     right: 60px;
+    top: 40px;
   }
   .menu__item {
     margin: 5px;
     padding: 0;
+    font-size: 24px;
+    line-height: 38px;
   }
   .welcome {
     padding: 0 10px;
@@ -1176,7 +1179,7 @@ ul {
   }
   .navigation {
     display: block;
-    padding-bottom: 20px;
+    padding: 20px 40px 20px 40px;
   }
   .navigation__social {
     justify-content: center;
