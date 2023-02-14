@@ -1064,11 +1064,15 @@ ul {
 }
 @media (max-width: 670px) {
   .tree__box {
-    display: block;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
     &-wrapper {
-      padding: 5px;
-      max-width: 250px;
-      margin-bottom: 15px;
+      min-width: 240px;
+      padding: 20px;
     }
     &-subscribe {
       margin: 0 auto;
@@ -1242,14 +1246,26 @@ ul {
     line-height: 28px;
     margin: 15px 0;
  }
- .tree__box-text--title {
-  font-size: 20px;
-  line-height: 32px;
-  margin: 0;
- }
- .tree__box-text--subtitle {
-  font-size: 26px;
-  line-height: 36px;
+ .tree__box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  &-text--title {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+  }
+  &-text--subtitle {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  &-wrapper {
+    min-width: 240px;
+    padding: 25px;
+  }
  }
  .tree__box-subscribe,
  .parameters__text,
@@ -1262,9 +1278,6 @@ ul {
  }
  .tree__btn {
   padding: 15px 25px;
- }
- .tree__box-wrapper {
-  min-width: 255px;
  }
  .parameters__title,
  .token__title,
@@ -1299,6 +1312,9 @@ ul {
  .tokenomics__box {
   font-size: 16px;
  }
+ .formula__background-text span {
+  font-size: 24px;
+}
  .collection__info-btn {
   font-size: 14px;
  }
