@@ -59,7 +59,7 @@ ul {
   gap: 0 35px;
 }
 .navigation__link {
-  transition: all 0.3s;
+  transition: all 0s;
 }
 .navigation__link:hover {
   color: #C2E978;
@@ -901,17 +901,6 @@ ul {
     left: 0;
     height: 100vh;
     position: absolute;
-  }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    transition-duration: 0.25s;
-  }
-  .menu__box {
-    transition-duration: 0.25s;
-  }
-  .menu__item {
-    transition-duration: 0.25s;
   }
   .logo {
     z-index: 1;
